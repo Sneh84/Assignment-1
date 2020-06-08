@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun. 4, 2020, 7:08:23 p.m.
+    Author     : Snehdeep Singh
+*/
+body{
+   
+    background-color: skyblue;
+    
+}
+.g{
+    
+    border:1px solid black;
+    font-size:2em;
+    
+}
+.k{
+    font-size:1em;
+}
+fieldset{
+    margin-right:900px;
+    padding-bottom: 150px;
+}
+#results{
+    font-size:30px;
+}
+#a1{
+   
+    font-size:1.5em;
+}
+#a2{
+    display:none;
+    font-size:1.5em;
+}
+#a3{
+    display:none;
+    font-size:1.5em;
+}
+#a4{
+    display:none;
+    font-size:1.5em;
+}
+#a5{
+    display:none;
+    font-size:1.5em;
+}
+#a6{
+    display:none;
+    font-size:1.5em;
+}
+#a7{
+    display:none;
+    font-size:1.5em;
+}
+#a8{
+    display:none;
+    font-size:1.5em;
+}
+#a9{
+    display:none;
+    font-size:1.5em;
+}
+#a10{
+    display:none;
+    font-size:1.5em;
+}

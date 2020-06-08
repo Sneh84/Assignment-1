@@ -39,15 +39,18 @@ function submit(){
             of "+numofQuestion;
             document.getElementById("results").style.display = "block";
              document.getElementById("a"+questionNo).style["display"] = "none";
-                  
+                  document.getElementById("help").style.display="none";
         }else{
        questionNo++;
        
         document.getElementById("a"+questionNo).style["display"] = "block";
         document.getElementById("a"+(questionNo-1)).style["display"] = "none";
-             
+             document.getElementById("help").style.display="none";
     }
-    } function help(){
+    }
+    
+ 
+    function help(){
        
       var help =  document.getElementById('help');
        document.getElementById('help').style["display"] = "block";
@@ -92,9 +95,6 @@ function submit(){
          document.getElementById("results").style.display = "none";
          document.getElementById("help").style.display="none";
          document.getElementById("b"+questionNo).style["bakgroundColor"]="";
-     }
+        
     
-
-    
-    
-
+    }

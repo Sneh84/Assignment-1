@@ -28,6 +28,8 @@ function submit(){
                document.getElementById("b"+ questionNo).
                        style["backgroundColor"]="red";
         }
+           
+    
   
    
     console.log("You Score "+points+ " out of "+numofQuestion);
@@ -101,6 +103,6 @@ function submit(){
          document.getElementById("results").style.display = "none";
          document.getElementById("help").style.display="none";
          document.getElementById("b"+questionNo).style["bakgroundColor"]="";
-        
-    
+         
+     
     }

@@ -68,3 +68,21 @@ fieldset{
     display:none;
     font-size:1.5em;
 }
+
+#results {
+    display: none;
+}
+#b{
+	display:flex;
+	flex-wrap:wrap;/*used when line exeed*/
+	flex-direction:row;/*row,column,row-reverse,column-reverse*/
+	}
+#b>div{
+	border:1px solid black;
+	margin:1px;
+	background-color:skyblue;
+	padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+        }

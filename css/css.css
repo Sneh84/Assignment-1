@@ -71,6 +71,7 @@ fieldset{
 
 #results {
     display: none;
+    color: red;     
 }
 #b{
 	display:flex;

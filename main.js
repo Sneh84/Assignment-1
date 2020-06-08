@@ -1,19 +1,22 @@
 
-var questionNo =1;
+var questionNo =1;//Start number of question
 var points = 0;
-var numofQuestion = 5;
+var numofQuestion = 5;//Total number of question
 
 function submit(){
 
-     var ans =['A','D','A','B','A','D','B','A','A','C'];
+     var ans =['A','D','A','B','A'];//Answer for question in sequence
      
+     //assignins Values for particular question
      var q1 = document.forms['quiz']['q1'].value;
      var q2 = document.forms['quiz']['q2'].value;
      var q3 = document.forms['quiz']['q3'].value;
      var q4 = document.forms['quiz']['q4'].value;
      var q5 = document.forms['quiz']['q5'].value;
      
-     
+     //if the value of question are equal as provided in array 
+     //then answer is right and will show the green light
+     //else it will show red light on top
         if(eval('q'+questionNo)=== ans[questionNo-1]){
             points++;
             console.log("your anwer is correct");
@@ -29,7 +32,10 @@ function submit(){
    
     console.log("You Score "+points+ " out of "+numofQuestion);
     return false;   
-    }   
+    }
+    //This function will help us to reach the next answer
+    //When the question are end it will show you the end result that how many 
+    //cotrrect answer you give
     
     function nextquest(){
        
@@ -49,7 +55,7 @@ function submit(){
     }
     }
     
- 
+    //This button will help you to know the rules and working of quiz
     function help(){
        
       var help =  document.getElementById('help');
@@ -82,7 +88,7 @@ function submit(){
          document.getElementById("results").style.display = "none";
      }
         
-    
+    //This will help user to restart the game and allow him to change the enterd answers
        function restart(){
         questionNo =1;
          points = 0;

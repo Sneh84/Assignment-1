@@ -12,8 +12,44 @@ function submit(){
      var q3 = document.forms['quiz']['q3'].value;
      var q4 = document.forms['quiz']['q4'].value;
      var q5 = document.forms['quiz']['q5'].value;
+     
+     
+        if(eval('q'+questionNo)=== ans[questionNo-1]){
+            points++;
+            console.log("your anwer is correct");
+            document.getElementById("b"+ questionNo).
+                    style["backgroundColor"]="green";
+           
+        } else{
+            console.log("Your answer is incorrect");
+               document.getElementById("b"+ questionNo).
+                       style["backgroundColor"]="red";
+        }
+  
+   
+    console.log("You Score "+points+ " out of "+numofQuestion);
+    return false;   
+    }   
+    
+    function nextquest(){
+       
+        if(questionNo >4){
+            var results = document.getElementById('results');
+            results.innerHTML="you Score "+points+" points out \n\
+            of "+numofQuestion;
+            document.getElementById("results").style.display = "block";
+             document.getElementById("a"+questionNo).style["display"] = "none";
+                  
+        }else{
+       questionNo++;
+       
+        document.getElementById("a"+questionNo).style["display"] = "block";
+        document.getElementById("a"+(questionNo-1)).style["display"] = "none";
+             
+    }
+    }
     
 
-    }
+    
     
 

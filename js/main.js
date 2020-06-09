@@ -48,6 +48,8 @@ function submit(){
             document.getElementById("results").style.display = "block";
              document.getElementById("a"+questionNo).style["display"] = "none";
                   document.getElementById("help").style.display="none";
+                
+                  
         }else{
        questionNo++;
        
@@ -102,7 +104,12 @@ function submit(){
          document.getElementById("a5").style.display = "none";
          document.getElementById("results").style.display = "none";
          document.getElementById("help").style.display="none";
-         document.getElementById("b"+questionNo).style["bakgroundColor"]="";
+         document.getElementById("b1").style["background-color"]="skyblue";
+        document.getElementById("b2").style["background-color"]="skyblue";
+        document.getElementById("b3").style["background-color"]="skyblue";
+        document.getElementById("b4").style["background-color"]="skyblue";
+        document.getElementById("b5").style["background-color"]="skyblue";
+         
          
      
     }
